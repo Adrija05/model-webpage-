@@ -1,0 +1,297 @@
+* {
+    margin:0;
+    padding:0;
+    font-family:Gilroy;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+#main{
+    background-color: F8F8F8;
+    height:100%;
+    width:100%;
+    position: relative;
+    padding:0.5px;
+}
+#nav{
+    margin-top:20px;
+    width:100%;
+    height:11vh;
+    /* background-color: red; */
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav h2{
+    /* background-color: yellow; */
+    height:100%;
+    width:25%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-right:3px solid black;
+}
+#nav h1{
+    /* background-color: yellow; */
+    height:100%;
+    width:18%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+#nav h1::after{
+    content:"©️";
+    font-size: 10px;;
+}
+#nav h1::before{
+    content:"model management";
+    position:absolute;
+    font-size: 10px;
+    bottom:22%;
+    right:25%;
+    font-weight: 100px;
+}
+#nav h3{
+    display:none;
+}
+
+#center{
+    /* background-color: red; */
+    height:88%;
+    width:100%;
+    padding:4vh;
+    position:relative;
+}
+#content{
+    /* background-color: blue; */
+    width:100%;
+    height:100%;
+    position:relative;
+}
+#content video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+#overlay{
+    height:30%;
+    width:100%;
+    /* background-color: red; */
+    position:absolute;
+    bottom:0;
+}
+#overlay1{
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: solid white;
+}
+#overlay1 h2{
+    font-size:20;
+}
+#scroll{
+    height:40vh;
+    width:100%;
+    background-color:F8F8F8;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#container{
+    height:100%;
+    width:100%;
+    /* background-color: blue; */
+    display:inline-block;
+    padding:20px 0;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: 5;
+}
+#scroll img{
+    /* display:none;  */
+    height:80%;
+    width:17%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin: 2vh;
+}
+@keyframes anime {
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+#page1{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5vw;
+}
+#page11{
+    width: 50%;
+    height:100%;
+    background-image: url(https://media.istockphoto.com/id/929210396/photo/blonde-woman-with-stylish-short-hairstyle.jpg?s=1024x1024&w=is&k=20&c=5auy9BiFNtp4yxtYrg78Bt7lUGuKwlZuqdkR8rkWo9k=);
+    background-size:cover ;
+    background-position:center ;
+}
+#page22{
+    width: 46%;
+    height:100%;
+
+}
+#page22 img{
+    width:100%;
+    height:70%;
+    object-fit: cover;
+    object-position:top;
+}
+#page-text{
+    width:100%;
+    height:30%;
+    /* background-color: red; */
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 20px;
+    color: green;
+}
+#text1{
+    font-size: 50px;
+}
+#bottom{
+    width:100%;
+    height:100%;
+    /* background-color: red; */
+    padding: 4vh 5vh;
+    font-weight: 500;
+}
+#bottom>h1/* > to access the direct h1*/{
+    margin-bottom: 5vh;
+    text-align: center;
+    text-transform: uppercase;
+}
+.rec{
+    width:100%;
+    height:15vh;
+    /* background-color: yellow; */
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 20px;
+    position:relative;
+}
+.rec img{
+    height:100px;
+    width:100px;
+    position:absolute;
+    border-radius: 50%;;
+    left:25%;
+    object-fit: cover;
+    object-position: top;
+}
+.rec h5{
+    width:6;
+    text-transform: uppercase;
+}
+.rec1{
+    /* background-color: green; */
+    width:40%;
+}
+.rec:hover{
+    background-color: rgba(218, 199, 199, 0.102);
+}
+.rec:nth-last-child(1) h5{
+    font-size: larger;
+    font-weight: 200;
+}
+
+
+
+@media (max-width:600px){
+    #nav{
+        margin-top:20px;
+        height:8vh;
+        padding:0 5vw;
+    }
+    #nav h2{
+        display: none;
+        font-size: 24px;
+    }
+    #nav h1{
+        font-size: 25px;
+    }
+    #nav h1::after{
+        display: none;
+    }
+    #nav h1::before{
+        display: none;
+    }
+    #nav h3{
+        display:block;
+    }
+    #center{
+        height:60%;
+        width:100%;
+        padding:4vh;
+        position:relative;
+    }
+    #overlay{
+        height:35%;
+        width:100%;
+        /* background-color: red; */
+        position:absolute;
+        bottom:0;
+    }
+    #overlay1 h2{
+        font-size:15;
+    }
+    #overlay1{
+        padding: 20px 30px;
+    }
+    #overlay1 h1{
+        font-size: 25;
+    }
+    #scroll{
+        height:20vh;
+    }
+    #scroll img{
+        height:65%;
+        width:14%;
+    }
+    #container{
+        height:100%;
+        width:100%;
+        /* background-color: blue; */
+        display:inline-block;
+        padding:6px 0;
+        animation-name: anime;
+        animation-duration: 2s;
+        animation-iteration-count: 5;
+    }
+    #page1{
+        height:60%;
+    }
+    #text1{
+        font-size: 10px;
+        display: none;
+    }
+    #text2{
+        display:none;
+    }
+ 
+
+}
